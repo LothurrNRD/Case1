@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/simplePagination.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="third">
+        </div>
+        <div class="fourth">
+            <div class="sections">
+            </div>
+            <div class="sections">
+            </div>
+        </div>
+    </header>
+    <div class="general">
+        <secion class="sec1">
+            <div class="category">
+                <h4>Alt Kategoriler</h4>
+                <a href="#">Pişirme<span>(583)</span></a>
+                <a href="#">Sofra, Servis & Sunum<span>(334)</span></a>
+                <a href="#">Çay Kahve Demleme<span>(130)</span></a>
+                <a href="#">Yemek Hazırlama<span>(115)</span></a>
+                <a href="#">Fırında Pişirme<span>(35)</span></a>
+                <a href="#">Çeyiz Setleri<span>(24)</span></a>
+                <a href="#">Termoslar<span>(9)</span></a>
+            </div>
+        </secion>
+        <section class="sec2">
+        </section>
+    </div>
+    <div id="pagination"></div>
+</body>
+
+</html>
+<script>
+    $(document).ready(function () {
+        items();
+        createArray();
+    });
+    $(".third").click(function () {
+        $(".item").css({ "width": "25%", "margin": "30px" });
+        $('.third div').css('background-color', 'rgb(196, 196, 58)')
+        $('.fourth .sections div').css('background-color', 'gray')
+    });
+    $(".fourth").click(function () {
+        $(".item").css({ "width": "20%", "margin": "0px" });
+        $('.fourth .sections div').css('background-color', 'rgb(196, 196, 58)')
+        $('.third div').css('background-color', 'gray')
+    });
+</script>
