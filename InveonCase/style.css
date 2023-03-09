@@ -1,3 +1,6 @@
+body{
+    max-width: 100%;
+}
 .general {
     display: flex;
     padding: 30px;
@@ -160,25 +163,37 @@ header {
     height: 6px;
     background-color: rgb(196, 196, 58);
 }
-
-.pagination {
-    display: block;
-    margin: 100px 0px;
-    padding-left: 50%;
+.pagination{
+    margin: 5% 0%;
+    margin-left: 40%;
 }
 
-.pagination-item{
-    padding: 10px 30px;
-    background-color: gray;
-    text-decoration: none;
-    color: white;
-    border: 1px solid gray;
+.pagination ul li {
+    float: left;
+    margin: 0 5px 0 0;
+    background: #909090;
+    list-style: none;
+    border:1px solid #909090;
     border-radius: 30px;
-    margin: 0px 10px;
 }
-.active {
+ 
+.pagination ul li a, .pagination ul li span {
+    display: block;
+    padding: 0 30px;
+    color: #fff;
+    font-size: 17px;
+    line-height: 38px;
+    text-decoration: none;
+}
+ 
+.pagination ul li.active {
+    color: #fff;
     background-color: orangered;
-    border: 1px solid orangered;
+}
+ 
+.pagination ul li:hover, .pagination ul li.active {
+    color: #fff;
+    background-color: orangered;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
@@ -189,11 +204,15 @@ header {
 
     .item {
         width: 100%;
+        padding: 2px;
     }
 
     .sec2 {
         width: 100%;
         margin-left: 0px;
+    }
+    .pagination{
+        display: none;
     }
 
     header {
@@ -210,6 +229,9 @@ header {
 
     .item {
         width: 45%;
+    }
+    .pagination{
+        display: none;
     }
 
     .sec2 {

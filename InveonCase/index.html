@@ -16,39 +16,47 @@
 </head>
 
 <body>
-    <header>
-        <div class="third">
+    <section style="max-height: 70vh;">
+        <header>
+            <div class="third">
+            </div>
+            <div class="fourth">
+                <div class="sections">
+                </div>
+                <div class="sections">
+                </div>
+            </div>
+        </header>
+        <div class="general">
+            <secion class="sec1">
+                <div class="category">
+                    <h4>Alt Kategoriler</h4>
+                    <a href="#">Pişirme<span>(583)</span></a>
+                    <a href="#">Sofra, Servis & Sunum<span>(334)</span></a>
+                    <a href="#">Çay Kahve Demleme<span>(130)</span></a>
+                    <a href="#">Yemek Hazırlama<span>(115)</span></a>
+                    <a href="#">Fırında Pişirme<span>(35)</span></a>
+                    <a href="#">Çeyiz Setleri<span>(24)</span></a>
+                    <a href="#">Termoslar<span>(9)</span></a>
+                </div>
+            </secion>
+            <section class="sec2">
+            </section>
         </div>
-        <div class="fourth">
-            <div class="sections">
-            </div>
-            <div class="sections">
+        <div class="pagg">
+            <div class="pagination">
+                <ul>
+                    <li><a href="#">&laquo;</a></li>
+                    <li class="active"><span>1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</i></a></li>
+                </ul>
             </div>
         </div>
-    </header>
-    <div class="general">
-        <secion class="sec1">
-            <div class="category">
-                <h4>Alt Kategoriler</h4>
-                <a href="#">Pişirme<span>(583)</span></a>
-                <a href="#">Sofra, Servis & Sunum<span>(334)</span></a>
-                <a href="#">Çay Kahve Demleme<span>(130)</span></a>
-                <a href="#">Yemek Hazırlama<span>(115)</span></a>
-                <a href="#">Fırında Pişirme<span>(35)</span></a>
-                <a href="#">Çeyiz Setleri<span>(24)</span></a>
-                <a href="#">Termoslar<span>(9)</span></a>
-            </div>
-        </secion>
-        <section class="sec2">
-        </section>
-    </div>
-    <div class="pagination">
-        <a class="pagination-item active" href="#">1</a>
-        <a class="pagination-item " href="#">1</a>
-        <a class="pagination-item " href="#">1</a>
-        <a class="pagination-item " href="#">1</a>
-        <a class="pagination-item " href="#">1</a>
-    </div>
+    </section>
 </body>
 
 </html>
@@ -61,10 +69,12 @@
         $(".item").css({ "width": "25%", "margin": "30px" });
         $('.third div').css('background-color', 'rgb(196, 196, 58)')
         $('.fourth .sections div').css('background-color', 'gray')
+        $('.pagination').css({'margin': '50% 0%',"margin-left": "40%"})
     });
     $(".fourth").click(function () {
         $(".item").css({ "width": "20%", "margin": "0px" });
         $('.fourth .sections div').css('background-color', 'rgb(196, 196, 58)')
         $('.third div').css('background-color', 'gray')
+        $('.pagination').css({'margin': '5% 0%',"margin-left": "40%"})
     });
 </script>
