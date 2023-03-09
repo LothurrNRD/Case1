@@ -174,3 +174,22 @@ header {
     }
 
 }
+@media only screen and (min-device-width : 601px) and (max-device-width : 1025px) {
+    .general {
+        display: block;
+        padding: 10px;
+    }
+
+    .item {
+        width: 45%;
+    }
+    .sec2{
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    header {
+        display: none;
+    }
+
+}
