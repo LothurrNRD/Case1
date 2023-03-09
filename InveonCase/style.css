@@ -27,7 +27,8 @@
     color: #565454;
     margin-bottom: 10px;
 }
-.category a:hover{
+
+.category a:hover {
     color: black;
 }
 
@@ -52,17 +53,18 @@
     width: 20%;
     border: 1px solid rgb(182, 179, 179);
 }
-.item:hover{
+
+.item:hover {
     box-shadow: 5px 5px 5px 1px grey;
 }
 
 .item img {
-    max-width: 100%;
-    max-height: 70%;
+    max-width: 100vh;
+    max-height: 70vh;
 }
 
 .discount {
-    width: 15%;
+    width: 20%;
     background: red;
     color: white;
     font-size: large;
@@ -105,17 +107,20 @@
     color: rgb(88, 88, 88);
     font-size: medium;
 }
-.extraDiscount{
+
+.extraDiscount {
     background-color: lightgray;
     margin-top: 10px;
     padding: 5px;
 }
-.extraDiscountPerc{
+
+.extraDiscountPerc {
     margin: 0;
     color: green;
 
 }
-.extraDiscountPrice{
+
+.extraDiscountPrice {
     font-size: 15px;
     margin: 0;
     font-size: 30px;
@@ -138,13 +143,14 @@ header {
     height: 14px;
     background-color: gray;
 }
-.fourth{
+
+.fourth {
     margin-left: 5px;
     padding-left: 5px;
     border-left: 1px solid gray;
 }
 
-.fourth .sections{
+.fourth .sections {
     display: flex;
 }
 
@@ -153,6 +159,26 @@ header {
     width: 6px;
     height: 6px;
     background-color: rgb(196, 196, 58);
+}
+
+.pagination {
+    display: block;
+    margin: 100px 0px;
+    padding-left: 50%;
+}
+
+.pagination-item{
+    padding: 10px 30px;
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 30px;
+    margin: 0px 10px;
+}
+.active {
+    background-color: orangered;
+    border: 1px solid orangered;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
@@ -164,7 +190,8 @@ header {
     .item {
         width: 100%;
     }
-    .sec2{
+
+    .sec2 {
         width: 100%;
         margin-left: 0px;
     }
@@ -174,6 +201,7 @@ header {
     }
 
 }
+
 @media only screen and (min-device-width : 601px) and (max-device-width : 1025px) {
     .general {
         display: block;
@@ -183,7 +211,8 @@ header {
     .item {
         width: 45%;
     }
-    .sec2{
+
+    .sec2 {
         width: 100%;
         margin-left: 10px;
     }
